@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title & Description -->
+    <title>Consuming Fire Cathedral - A Church on Fire for Jesus</title>
+    <meta name="description" content="Watch sermons and live services from Consuming Fire Cathedral. Led by Prophet Musa Baloyi and Prophetess Fikile Baloyi, igniting revival across South Africa.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.consumingfirecathedral.co.za/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Consuming Fire Cathedral - A Church on Fire for Jesus">
+    <meta property="og:description" content="Join live services, watch sermons, and be part of the fire revival. Led by Prophet Musa Baloyi.">
+    <meta property="og:image" content="https://www.consumingfirecathedral.co.za/images/logo.png">
+    <meta property="og:url" content="https://www.consumingfirecathedral.co.za/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Consuming Fire Cathedral - A Church on Fire for Jesus">
+    <meta name="twitter:description" content="Spirit-filled services, live streams, and revival teachings with Prophet Musa Baloyi.">
+    <meta name="twitter:image" content="https://www.consumingfirecathedral.co.za/images/logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --fire-red: #DC2626;
+            --fire-orange: #EA580C;
+            --divine-gold: #F59E0B;
+            --deep-blue: #1E3A8A;
+            --royal-purple: #7C3AED;
+        }
+        
+        .font-cinzel { font-family: 'Cinzel', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        
+        .fire-gradient {
+            background: linear-gradient(135deg, #DC2626 0%, #EA580C 25%, #F59E0B 50%, #EF4444 75%, #DC2626 100%);
+            background-size: 400% 400%;
+            animation: fireFlow 4s ease-in-out infinite;
+        }
+        
+        .divine-gradient {
+            background: linear-gradient(135deg, #1E3A8A 0%, #7C3AED 50%, #DC2626 100%);
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #F59E0B 100%);
+        }
+        
+        @keyframes fireFlow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(220, 38, 38, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(220, 38, 38, 0.8), 0 0 60px rgba(245, 158, 11, 0.4); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .glow-effect {
+            animation: glow 3s ease-in-out infinite;
+        }
+        
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .flame-icon {
+            filter: drop-shadow(0 0 10px rgba(220, 38, 38, 0.7));
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(220, 38, 38, 0.6)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23000" width="1200" height="800"/><g fill="%23DC2626" opacity="0.1"><circle cx="200" cy="200" r="100"/><circle cx="800" cy="300" r="150"/><circle cx="1000" cy="600" r="120"/></g></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .nav-glass {
+            backdrop-filter: blur(10px);
+            background: rgba(30, 58, 138, 0.9);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .announcement-scroll {
+            animation: scroll-left 30s linear infinite;
+        }
+        
+        @keyframes scroll-left {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 nav-glass border-b border-red-500/20">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="text-2xl flame-icon">🔥</div>
+                    <div>
+                        <h1 class="font-cinzel font-bold text-xl text-yellow-400">Consuming Fire</h1>
+                        <p class="text-xs text-gray-300">Cathedral</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-yellow-400 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-yellow-400 transition-colors">About</a>
+                    <a href="#branches" class="hover:text-yellow-400 transition-colors">Branches</a>
+                    <a href="#services" class="hover:text-yellow-400 transition-colors">Services</a>
+                    <a href="#sermons" class="hover:text-yellow-400 transition-colors">Sermons</a>
+                    <a href="#give" class="hover:text-yellow-400 transition-colors">Give</a>
+                    <a href="#contact" class="hover:text-yellow-400 transition-colors">Contact</a>
+                </div>
+                
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen hero-bg flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-red-900/20 to-blue-900/40"></div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 text-6xl opacity-20 float-animation">✝️</div>
+        <div class="absolute top-40 right-20 text-4xl opacity-30 float-animation" style="animation-delay: 2s;">🕊️</div>
+        <div class="absolute bottom-40 left-20 text-5xl opacity-25 float-animation" style="animation-delay: 4s;">🙏</div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="scroll-reveal">
+                <h1 class="font-cinzel text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text fire-gradient">
+                    Welcome to Consuming Fire Cathedral
+                </h1>
+                <p class="text-2xl md:text-3xl mb-4 text-yellow-300 font-semibold">
+                    A Church on Fire for Jesus
+                </p>
+                <p class="text-xl mb-8 text-gray-200 max-w-3xl mx-auto">
+                    Experience the Fire of God's Presence • Where Heaven Touches Earth • Revival Starts Here
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+    <!-- Watch Live: Scrolls to the Services section -->
+    <a href="#sermons">
+        <button class="fire-gradient px-8 py-4 rounded-full font-semibold text-white glow-effect hover:scale-105 transition-transform">
+            <i class="fas fa-play mr-2"></i>Watch Live
+        </button>
+    </a>
+
+    <!-- Find a Branch: Scrolls to Branches section -->
+    <a href="#branches">
+        <button class="bg-yellow-500 hover:bg-yellow-400 px-8 py-4 rounded-full font-semibold text-black transition-colors">
+            <i class="fas fa-map-marker-alt mr-2"></i>Find a Branch
+        </button>
+    </a>
+
+    <!-- Give Now: Scrolls to Giving section (add ID if missing) -->
+    <a href="#give">
+        <button class="border-2 border-white hover:bg-white hover:text-black px-8 py-4 rounded-full font-semibold transition-colors">
+            <i class="fas fa-heart mr-2"></i>Give Now
+        </button>
+    </a>
+
+    <!-- Visit Us: Scrolls to Contact section -->
+    <a href="#contact">
+        <button class="divine-gradient px-8 py-4 rounded-full font-semibold text-white hover:scale-105 transition-transform">
+            <i class="fas fa-church mr-2"></i>Visit Us
+        </button>
+    </a>
+</div>
+
+            </div>
+        </div>
+        
+        <!-- Scrolling Announcements -->
+        <div class="absolute bottom-0 w-full bg-red-600/90 py-3 overflow-hidden">
+            <div class="announcement-scroll whitespace-nowrap">
+                <span class="text-lg font-semibold">
+                    🔥 Fire Night Service - Every Friday 7PM • 🙏 Healing Sunday - This Weekend • ✨ Revival Conference - March 15-17 • 📖 Bible Study - Wednesdays 6PM • 
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-gray-900 to-blue-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text gold-gradient">
+                    About Our Ministry
+                </h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                    Consuming Fire Cathedral is a Spirit-filled church established to bring the fire of God's presence to South Africa and beyond. We are a community of believers passionate about worship, prayer, and seeing lives transformed by the power of Jesus Christ.
+                </p>
+            </div>
+            
+            <!-- Leadership -->
+<div class="grid md:grid-cols-2 gap-12 mb-16">
+    <!-- Prophet Musa Baloyi -->
+    <div class="text-center scroll-reveal card-hover bg-gradient-to-br from-red-900/30 to-purple-900/30 p-8 rounded-2xl border border-red-500/20">
+        <div class="mb-6">
+            <img src="images/musa.jpg" alt="Prophet Musa Baloyi" class="mx-auto" style="width: 600px; height: 400px; object-fit: contain;">
+        </div>
+        <h3 class="font-cinzel text-2xl font-bold mb-2 text-yellow-400">Prophet Musa Baloyi</h3>
+        <p class="text-red-300 font-semibold mb-4">Senior Prophet & Founder</p>
+        <p class="text-gray-300 italic">"Carrying the mantle of fire to nations."</p>
+        <p class="text-sm text-gray-400 mt-4">
+            A man of God with a burning passion for souls and a heart for revival. Prophet Musa carries a powerful anointing for healing, deliverance, and prophetic ministry.
+        </p>
+    </div>
+
+    <!-- Prophetess Fikile Baloyi -->
+    <div class="text-center scroll-reveal card-hover bg-gradient-to-br from-purple-900/30 to-blue-900/30 p-8 rounded-2xl border border-purple-500/20">
+        <div class="mb-6">
+            <img src="images/fikile.jpg" alt="Prophetess Fikile Baloyi" class="mx-auto" style="width: 600px; height: 400px; object-fit: contain;">
+        </div>
+        <h3 class="font-cinzel text-2xl font-bold mb-2 text-yellow-400">Prophetess Fikile Baloyi</h3>
+        <p class="text-purple-300 font-semibold mb-4">Intercessory Leader</p>
+        <p class="text-gray-300 italic">"A voice of prayer, healing, and deliverance."</p>
+        <p class="text-sm text-gray-400 mt-4">
+            A powerful woman of prayer with a heart for intercession and healing. Prophetess Fikile leads our prayer ministry and women's outreach programs.
+        </p>
+    </div>
+</div>
+
+            
+            <!-- Vision & Mission -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center scroll-reveal card-hover bg-gradient-to-br from-red-900/40 to-orange-900/40 p-6 rounded-xl border border-red-500/30">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="font-cinzel text-xl font-bold mb-3 text-yellow-400">Our Vision</h3>
+                    <p class="text-gray-300">To be a church that ignites revival fire across South Africa and beyond, transforming lives through the power of God.</p>
+                </div>
+                
+                <div class="text-center scroll-reveal card-hover bg-gradient-to-br from-blue-900/40 to-purple-900/40 p-6 rounded-xl border border-blue-500/30">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="font-cinzel text-xl font-bold mb-3 text-yellow-400">Our Mission</h3>
+                    <p class="text-gray-300">To preach the Gospel with signs, wonders, and miracles, establishing believers in faith and sending them out as flames of fire.</p>
+                </div>
+                
+                <div class="text-center scroll-reveal card-hover bg-gradient-to-br from-yellow-900/40 to-red-900/40 p-6 rounded-xl border border-yellow-500/30">
+                    <div class="text-4xl mb-4">📖</div>
+                    <h3 class="font-cinzel text-xl font-bold mb-3 text-yellow-400">What We Believe</h3>
+                    <p class="text-gray-300">We believe in the Trinity, salvation by grace, the gifts of the Spirit, divine healing, and the second coming of Jesus Christ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+<section id="branches" class="py-20 bg-gradient-to-b from-blue-900 to-gray-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="font-cinzel text-3xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text fire-gradient">
+                Our Branches
+            </h2>
+            <p class="text-lg md:text-xl text-gray-300">Find a Consuming Fire Cathedral near you</p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="scroll-reveal card-hover bg-gradient-to-br from-red-900/30 to-blue-900/30 p-6 sm:p-8 rounded-2xl border border-red-500/20">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:space-x-6 space-y-4 sm:space-y-0">
+                    <div class="text-5xl sm:text-6xl flame-icon text-center sm:text-left">🏛️</div>
+
+                    <div class="flex-1">
+                        <h3 class="font-cinzel text-2xl font-bold mb-4 text-yellow-400 text-center sm:text-left">Main Branch - Giyani</h3>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Contact Info -->
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-red-400 mr-3 pt-1"></i>
+                                    <span>Giyani-F, 1356, Giyani, 0826</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-phone text-green-400 mr-3 pt-1"></i>
+                                    <span>073 946 5427 / +27 73 946 5427</span>
+                                </div>
+                                <div class="flex items-start break-words">
+    <i class="fas fa-envelope text-blue-400 mr-3 pt-1"></i>
+    <span class="break-words text-sm leading-snug">info@consumingfirecathedral.co.za</span>
+</div>
+
+                            </div>
+
+                            <!-- Service Times -->
+                            <div>
+                                <h4 class="font-semibold text-yellow-300 mb-3">Service Times</h4>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between">
+                                        <span>Sunday Service:</span>
+                                        <span class="text-yellow-300">9:00 AM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Wednesday Bible Study:</span>
+                                        <span class="text-yellow-300">6:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Friday Fire Night:</span>
+                                        <span class="text-yellow-300">7:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Saturday Prayer:</span>
+                                        <span class="text-yellow-300">6:00 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="mt-6 flex flex-wrap justify-center sm:justify-start gap-3">
+                            <button class="fire-gradient px-6 py-2 rounded-full text-sm font-semibold hover:scale-105 transition-transform">
+                                Get Directions
+                            </button>
+                            <button class="border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-6 py-2 rounded-full text-sm font-semibold transition-colors">
+                                Call Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 scroll-reveal">
+                <p class="text-gray-400 mb-4">More branches coming soon to serve you better!</p>
+                <button class="gold-gradient text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition-transform">
+                    <i class="fas fa-plus mr-2"></i>Request New Branch Location
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Services & Events Section -->
+    <section id="services" class="py-20 bg-gradient-to-b from-gray-900 to-red-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text gold-gradient">
+                    Services & Events
+                </h2>
+                <p class="text-xl text-gray-300">Join us for powerful times of worship and encounter</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="scroll-reveal card-hover bg-gradient-to-br from-red-600/30 to-orange-600/30 p-6 rounded-xl border border-red-500/30 text-center">
+                    <div class="text-4xl mb-4">🔥</div>
+                    <h3 class="font-cinzel text-lg font-bold mb-2 text-yellow-400">Fire Nights</h3>
+                    <p class="text-sm text-gray-300 mb-3">Every Friday 7:00 PM</p>
+                    <p class="text-xs text-gray-400">Powerful worship, prayer, and prophetic ministry</p>
+                </div>
+                
+                <div class="scroll-reveal card-hover bg-gradient-to-br from-blue-600/30 to-purple-600/30 p-6 rounded-xl border border-blue-500/30 text-center">
+                    <div class="text-4xl mb-4">🙌</div>
+                    <h3 class="font-cinzel text-lg font-bold mb-2 text-yellow-400">Healing Sundays</h3>
+                    <p class="text-sm text-gray-300 mb-3">First Sunday Monthly</p>
+                    <p class="text-xs text-gray-400">Special healing and miracle services</p>
+                </div>
+                
+                <div class="scroll-reveal card-hover bg-gradient-to-br from-green-600/30 to-teal-600/30 p-6 rounded-xl border border-green-500/30 text-center">
+                    <div class="text-4xl mb-4">📖</div>
+                    <h3 class="font-cinzel text-lg font-bold mb-2 text-yellow-400">Bible Study</h3>
+                    <p class="text-sm text-gray-300 mb-3">Wednesdays 6:00 PM</p>
+                    <p class="text-xs text-gray-400">Deep dive into God's Word</p>
+                </div>
+                
+                <div class="scroll-reveal card-hover bg-gradient-to-br from-purple-600/30 to-pink-600/30 p-6 rounded-xl border border-purple-500/30 text-center">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h3 class="font-cinzel text-lg font-bold mb-2 text-yellow-400">Conferences</h3>
+                    <p class="text-sm text-gray-300 mb-3">Quarterly Events</p>
+                    <p class="text-xs text-gray-400">Revival conferences and special gatherings</p>
+                </div>
+            </div>
+            
+            <!-- Upcoming Events -->
+            <div class="scroll-reveal">
+                <h3 class="font-cinzel text-3xl font-bold text-center mb-8 text-yellow-400">Upcoming Events</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="card-hover bg-gradient-to-br from-red-900/40 to-orange-900/40 p-6 rounded-xl border border-red-500/30">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-yellow-500 text-black p-3 rounded-lg text-center min-w-[60px]">
+                                <div class="text-lg font-bold">15</div>
+                                <div class="text-xs">MAR</div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Revival Fire Conference</h4>
+                                <p class="text-gray-300 text-sm mb-2">March 15-17, 2024 • 7:00 PM Daily</p>
+                                <p class="text-gray-400 text-xs">Three days of powerful ministry with guest speakers from across Africa</p>
+                                <button class="mt-3 fire-gradient px-4 py-2 rounded-full text-sm font-semibold hover:scale-105 transition-transform">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-br from-blue-900/40 to-purple-900/40 p-6 rounded-xl border border-blue-500/30">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-500 text-white p-3 rounded-lg text-center min-w-[60px]">
+                                <div class="text-lg font-bold">22</div>
+                                <div class="text-xs">MAR</div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Youth Explosion</h4>
+                                <p class="text-gray-300 text-sm mb-2">March 22, 2024 • 6:00 PM</p>
+                                <p class="text-gray-400 text-xs">Special youth service with contemporary worship and relevant teaching</p>
+                                <button class="mt-3 bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded-full text-sm font-semibold transition-colors">
+                                    Join Event
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermons Section -->
+<section id="sermons" class="py-20 bg-gradient-to-b from-red-900 to-blue-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text fire-gradient">
+                Sermons & Live Stream
+            </h2>
+            <p class="text-xl text-gray-300">Watch live services and access our sermon archive</p>
+        </div>
+
+        <!-- Live Stream -->
+        <div class="scroll-reveal mb-16">
+            <div class="bg-gradient-to-br from-red-900/40 to-purple-900/40 p-8 rounded-2xl border border-red-500/30">
+                <div class="text-center mb-6">
+                    <h3 class="font-cinzel text-2xl font-bold mb-4 text-yellow-400">🔴 Live Now</h3>
+                    <div class="aspect-video mb-4">
+                        <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/BSeEESuv8vI?si=OM6JgBI15eDo5C4K" title="YouTube Live Stream"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-xl font-semibold mb-2">Sunday Service Live</p>
+                    <p class="text-gray-400 mb-4">Join us for powerful worship and the Word</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://www.youtube.com/@goodbalcfc4492" target="_blank">
+                            <button class="bg-red-600 hover:bg-red-500 px-4 py-2 rounded-lg transition-colors">
+                                <i class="fab fa-youtube mr-2"></i>Watch on YouTube
+                            </button>
+                        </a>
+                        <a href="https://www.facebook.com/CFCprophetmusa/videos" target="_blank">
+                            <button class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-lg transition-colors">
+                                <i class="fab fa-facebook mr-2"></i>Watch on Facebook
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sermon Archive -->
+        <div class="scroll-reveal">
+            <h3 class="font-cinzel text-3xl font-bold text-center mb-8 text-yellow-400">Recent Sermons</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="card-hover bg-gradient-to-br from-blue-900/30 to-purple-900/30 p-4 rounded-xl border border-blue-500/20">
+                    <div class="aspect-video mb-3">
+                        <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/KD4tbcNnVUQ?si=D09liymACRvCN2cT" title="Recent Sermon 1"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h4 class="font-bold mb-2">Giyani CFC with Pastor Khathu</h4>
+                    <p class="text-sm text-gray-400 mb-2">Prophet Musa Baloyi • July 2024</p>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-red-900/30 to-orange-900/30 p-4 rounded-xl border border-red-500/20">
+                    <div class="aspect-video mb-3">
+                        <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/-rBWzkgsMDc?si=s1lu60HRrFtfuolZ" title="Recent Sermon 2"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h4 class="font-bold mb-2">Giyani CFC with Pastor Khathu</h4>
+                    <p class="text-sm text-gray-400 mb-2">Prophet Musa Baloyi • July 2024</p>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-green-900/30 to-teal-900/30 p-4 rounded-xl border border-green-500/20">
+                    <div class="aspect-video mb-3">
+                        <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/lJGHVxn-5JA?si=VEUv_tcsKnVAUDX6" title="Recent Sermon 3"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h4 class="font-bold mb-2">Giyani CFC with Pastor Khathu</h4>
+                    <p class="text-sm text-gray-400 mb-2">Prophet Musa Baloyi • July 2024</p>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="https://www.youtube.com/@goodbalcfc4492" target="_blank">
+                    <button class="gold-gradient text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition-transform">
+                        <i class="fas fa-archive mr-2"></i>View All Sermons on YouTube
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Give Section -->
+    <section id="give" class="py-20 bg-gradient-to-b from-blue-900 to-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text gold-gradient">
+                    Give & Support
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Partner with us in spreading the fire of God's love. Your generous giving helps us reach more souls and build God's kingdom.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Tithes & Offerings -->
+                    <div class="scroll-reveal card-hover bg-gradient-to-br from-yellow-900/40 to-orange-900/40 p-8 rounded-2xl border border-yellow-500/30">
+                        <div class="text-center">
+                            <div class="text-5xl mb-4">💰</div>
+                            <h3 class="font-cinzel text-2xl font-bold mb-4 text-yellow-400">Tithes & Offerings</h3>
+                            <p class="text-gray-300 mb-6">Support the ongoing ministry and operations of Consuming Fire Cathedral</p>
+                            
+                            <div class="space-y-3 mb-6">
+                                <button class="w-full fire-gradient py-3 rounded-lg font-semibold hover:scale-105 transition-transform">
+                                    <i class="fas fa-university mr-2"></i>EFT Transfer
+                                </button>
+                                <button class="w-full bg-green-600 hover:bg-green-500 py-3 rounded-lg font-semibold transition-colors">
+                                    <i class="fas fa-qrcode mr-2"></i>SnapScan
+                                </button>
+                                <button class="w-full bg-blue-600 hover:bg-blue-500 py-3 rounded-lg font-semibold transition-colors">
+                                    <i class="fas fa-credit-card mr-2"></i>PayFast
+                                </button>
+                            </div>
+                            
+                            <p class="text-xs text-gray-400">All transactions are secure and confidential</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Special Projects -->
+                    <div class="scroll-reveal card-hover bg-gradient-to-br from-red-900/40 to-purple-900/40 p-8 rounded-2xl border border-red-500/30">
+                        <div class="text-center">
+                            <div class="text-5xl mb-4">🏗️</div>
+                            <h3 class="font-cinzel text-2xl font-bold mb-4 text-yellow-400">Building Fund</h3>
+                            <p class="text-gray-300 mb-6">Help us expand our facilities to accommodate more souls for the kingdom</p>
+                            
+                            <div class="bg-gray-800 rounded-lg p-4 mb-6">
+                                <div class="flex justify-between text-sm mb-2">
+                                    <span>Progress</span>
+                                    <span>R 450,000 / R 1,200,000</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="fire-gradient h-3 rounded-full" style="width: 37.5%"></div>
+                                </div>
+                            </div>
+                            
+                            <button class="w-full gold-gradient text-black py-3 rounded-lg font-semibold hover:scale-105 transition-transform">
+                                <i class="fas fa-hammer mr-2"></i>Support Building Fund
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other Campaigns -->
+                <div class="scroll-reveal">
+                    <h3 class="font-cinzel text-2xl font-bold text-center mb-8 text-yellow-400">Other Ways to Give</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center card-hover bg-gradient-to-br from-green-900/30 to-teal-900/30 p-6 rounded-xl border border-green-500/20">
+                            <div class="text-3xl mb-3">🤝</div>
+                            <h4 class="font-bold mb-2">Community Outreach</h4>
+                            <p class="text-sm text-gray-400 mb-4">Support our feeding schemes and community programs</p>
+                            <button class="bg-green-600 hover:bg-green-500 px-4 py-2 rounded-full text-sm font-semibold transition-colors">
+                                Donate
+                            </button>
+                        </div>
+                        
+                        <div class="text-center card-hover bg-gradient-to-br from-blue-900/30 to-indigo-900/30 p-6 rounded-xl border border-blue-500/20">
+                            <div class="text-3xl mb-3">👥</div>
+                            <h4 class="font-bold mb-2">Youth Ministry</h4>
+                            <p class="text-sm text-gray-400 mb-4">Invest in the next generation of fire carriers</p>
+                            <button class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full text-sm font-semibold transition-colors">
+                                Support
+                            </button>
+                        </div>
+                        
+                        <div class="text-center card-hover bg-gradient-to-br from-purple-900/30 to-pink-900/30 p-6 rounded-xl border border-purple-500/20">
+                            <div class="text-3xl mb-3">🌍</div>
+                            <h4 class="font-bold mb-2">Missions</h4>
+                            <p class="text-sm text-gray-400 mb-4">Help us plant churches and spread the Gospel</p>
+                            <button class="bg-purple-600 hover:bg-purple-500 px-4 py-2 rounded-full text-sm font-semibold transition-colors">
+                                Give
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministries Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-900 to-red-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text fire-gradient">
+                    Our Ministries
+                </h2>
+                <p class="text-xl text-gray-300">Find your place in God's house and serve with passion</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Youth Ministry -->
+    <div class="scroll-reveal card-hover bg-gradient-to-br from-red-900/40 to-orange-900/40 p-4 rounded-xl border border-red-500/30 text-center">
+        <img src="images/youth.jpg" alt="Youth Ministry" class="mx-auto mb-4" style="width:600px; height:400px; object-fit:contain;">
+        <h3 class="font-cinzel text-xl font-bold mb-3 text-yellow-400">Youth Ministry</h3>
+        <p class="text-gray-300 mb-4">Empowering young people to be flames of fire for Jesus</p>
+        <button class="fire-gradient px-6 py-2 rounded-full text-sm font-semibold hover:scale-105 transition-transform">
+            Join Youth
+        </button>
+    </div>
+
+    <!-- Women of Fire -->
+    <div class="scroll-reveal card-hover bg-gradient-to-br from-purple-900/40 to-pink-900/40 p-4 rounded-xl border border-purple-500/30 text-center">
+        <img src="images/women.jpg" alt="Women of Fire" class="mx-auto mb-4" style="width:600px; height:400px; object-fit:contain;">
+        <h3 class="font-cinzel text-xl font-bold mb-3 text-yellow-400">Women of Fire</h3>
+        <p class="text-gray-300 mb-4">Sisterhood, prayer, and empowerment for women of all ages</p>
+        <button class="bg-purple-600 hover:bg-purple-500 px-6 py-2 rounded-full text-sm font-semibold transition-colors">
+            Join Women
+        </button>
+    </div>
+
+    <!-- Men on Fire -->
+    <div class="scroll-reveal card-hover bg-gradient-to-br from-blue-900/40 to-indigo-900/40 p-4 rounded-xl border border-blue-500/30 text-center">
+        <img src="images/men.jpg" alt="Men on Fire" class="mx-auto mb-4" style="width:600px; height:400px; object-fit:contain;">
+        <h3 class="font-cinzel text-xl font-bold mb-3 text-yellow-400">Men on Fire</h3>
+        <p class="text-gray-300 mb-4">Building godly men who lead with integrity and strength</p>
+        <button class="bg-blue-600 hover:bg-blue-500 px-6 py-2 rounded-full text-sm font-semibold transition-colors">
+            Join Men
+        </button>
+    </div>
+
+    <!-- Children's Church -->
+    <div class="scroll-reveal card-hover bg-gradient-to-br from-green-900/40 to-teal-900/40 p-4 rounded-xl border border-green-500/30 text-center">
+        <img src="images/kids.jpg" alt="Children's Church" class="mx-auto mb-4" style="width:600px; height:400px; object-fit:contain;">
+        <h3 class="font-cinzel text-xl font-bold mb-3 text-yellow-400">Children's Church</h3>
+        <p class="text-gray-300 mb-4">Fun, engaging, and age-appropriate ministry for kids</p>
+        <button class="bg-green-600 hover:bg-green-500 px-6 py-2 rounded-full text-sm font-semibold transition-colors">
+            Kids Ministry
+        </button>
+    </div>
+
+    <!-- Worship & Music -->
+    <div class="scroll-reveal card-hover bg-gradient-to-br from-yellow-900/40 to-orange-900/40 p-4 rounded-xl border border-yellow-500/30 text-center">
+        <img src="images/music.jpg" alt="Worship & Music" class="mx-auto mb-4" style="width:600px; height:400px; object-fit:contain;">
+        <h3 class="font-cinzel text-xl font-bold mb-3 text-yellow-400">Worship & Music</h3>
+        <p class="text-gray-300 mb-4">Leading God's people into His presence through music</p>
+        <button class="gold-gradient text-black px-6 py-2 rounded-full text-sm font-semibold hover:scale-105 transition-transform">
+            Join Worship
+        </button>
+    </div>
+
+    <!-- Evangelism & Deliverance -->
+    <div class="scroll-reveal card-hover bg-gradient-to-br from-red-900/40 to-purple-900/40 p-4 rounded-xl border border-red-500/30 text-center">
+        <img src="images/worship.jpg" alt="Evangelism & Deliverance" class="mx-auto mb-4" style="width:600px; height:400px; object-fit:contain;">
+        <h3 class="font-cinzel text-xl font-bold mb-3 text-yellow-400">Evangelism & Deliverance</h3>
+        <p class="text-gray-300 mb-4">Reaching the lost and setting the captives free</p>
+        <button class="divine-gradient px-6 py-2 rounded-full text-sm font-semibold hover:scale-105 transition-transform">
+            Join Mission
+        </button>
+    </div>
+
+</div>
+
+        </div>
+    </section>
+
+    <!-- Testimonies Section -->
+    <section class="py-20 bg-gradient-to-b from-red-900 to-blue-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text gold-gradient">
+                    Testimonies
+                </h2>
+                <p class="text-xl text-gray-300">See how God is moving in the lives of our church family</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="scroll-reveal card-hover bg-gradient-to-br from-yellow-900/30 to-orange-900/30 p-6 rounded-xl border border-yellow-500/20">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold mr-4">
+                            S
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Maluleke.</h4>
+                            <p class="text-sm text-gray-400">Healing Testimony</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic mb-4">
+                        "I came to Consuming Fire Cathedral with chronic pain that doctors couldn't heal. During a healing service, Prophet Musa prayed for me and I was instantly healed! The fire of God touched my body and I've been pain-free for 6 months now. Glory to Jesus!"
+                    </p>
+                    <div class="text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+                </div>
+                
+                <div class="scroll-reveal card-hover bg-gradient-to-br from-blue-900/30 to-purple-900/30 p-6 rounded-xl border border-blue-500/20">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            J
+                        </div>
+                        <div>
+                            <h4 class="font-bold">John Chauke.</h4>
+                            <p class="text-sm text-gray-400">Deliverance Testimony</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic mb-4">
+                        "I was bound by addiction for years until I encountered the fire of God at this church. The deliverance ministry here is powerful! I'm now free, restored, and serving God with my whole heart. This church changed my life completely."
+                    </p>
+                    <div class="text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+                </div>
+                
+                <div class="scroll-reveal card-hover bg-gradient-to-br from-green-900/30 to-teal-900/30 p-6 rounded-xl border border-green-500/20">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            M
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mary Makamu.</h4>
+                            <p class="text-sm text-gray-400">Financial Breakthrough</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic mb-4">
+                        "After joining Consuming Fire Cathedral and learning about biblical giving, God opened doors I never imagined. My business has grown 300% and I'm now able to bless others. The teaching here on prosperity is life-changing!"
+                    </p>
+                    <div class="text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 scroll-reveal">
+                <button class="fire-gradient px-8 py-3 rounded-full font-semibold glow-effect hover:scale-105 transition-transform">
+                    <i class="fas fa-plus mr-2"></i>Share Your Testimony
+                </button>
+                <button class="ml-4 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-8 py-3 rounded-full font-semibold transition-colors">
+                    <i class="fas fa-video mr-2"></i>Watch Video Testimonies
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Requests Section -->
+    <section class="py-20 bg-gradient-to-b from-blue-900 to-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text fire-gradient">
+                    Prayer Requests
+                </h2>
+                <p class="text-xl text-gray-300">Submit your prayer request and let our intercessory team stand with you</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Prayer Form -->
+                    <div class="scroll-reveal card-hover bg-gradient-to-br from-purple-900/40 to-blue-900/40 p-8 rounded-2xl border border-purple-500/30">
+                        <h3 class="font-cinzel text-2xl font-bold mb-6 text-yellow-400 text-center">Submit Prayer Request</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Your Name</label>
+                                <input type="text" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 focus:border-yellow-400 focus:outline-none" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Email (Optional)</label>
+                                <input type="email" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 focus:border-yellow-400 focus:outline-none" placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Prayer Category</label>
+                                <select class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 focus:border-yellow-400 focus:outline-none">
+                                    <option>Healing</option>
+                                    <option>Financial Breakthrough</option>
+                                    <option>Family & Relationships</option>
+                                    <option>Deliverance</option>
+                                    <option>Career & Business</option>
+                                    <option>Salvation</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Prayer Request</label>
+                                <textarea rows="4" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 focus:border-yellow-400 focus:outline-none" placeholder="Share your prayer request here..."></textarea>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-2">
+                                <label class="text-sm text-gray-400">Keep my request confidential</label>
+                            </div>
+                            <button type="submit" class="w-full fire-gradient py-3 rounded-lg font-semibold glow-effect hover:scale-105 transition-transform">
+                                <i class="fas fa-praying-hands mr-2"></i>Submit Prayer Request
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Intercessory Team Info -->
+                    <div class="scroll-reveal">
+                        <div class="card-hover bg-gradient-to-br from-red-900/40 to-orange-900/40 p-8 rounded-2xl border border-red-500/30 mb-6">
+                            <h3 class="font-cinzel text-2xl font-bold mb-4 text-yellow-400">Our Intercessory Team</h3>
+                            <p class="text-gray-300 mb-4">
+                                Led by Prophetess Fikile Baloyi, our dedicated prayer warriors are committed to standing in the gap for you. We believe in the power of agreement and the fire of intercession.
+                            </p>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock text-yellow-400 mr-3"></i>
+                                    <span>Prayer responses within 24 hours</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-lock text-green-400 mr-3"></i>
+                                    <span>Complete confidentiality assured</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-users text-blue-400 mr-3"></i>
+                                    <span>Team of 20+ dedicated intercessors</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-fire text-red-400 mr-3"></i>
+                                    <span>Anointed for breakthrough prayers</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-hover bg-gradient-to-br from-yellow-900/40 to-green-900/40 p-6 rounded-xl border border-yellow-500/30 text-center">
+                            <div class="text-4xl mb-3">📞</div>
+                            <h4 class="font-bold text-lg mb-2">Emergency Prayer Line</h4>
+                            <p class="text-yellow-300 font-semibold text-xl">073 946 5427</p>
+                            <p class="text-sm text-gray-400 mt-2">Available 24/7 for urgent prayer needs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gradient-to-b from-gray-900 to-red-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text gold-gradient">
+                Contact Us
+            </h2>
+            <p class="text-xl text-gray-300">Get in touch with our church family</p>
+        </div>
+
+        <div class="max-w-6xl mx-auto">
+            <div class="grid gap-12 md:grid-cols-2">
+
+                <!-- Contact Info -->
+                <div class="scroll-reveal">
+                    <div class="card-hover bg-gradient-to-br from-red-900/40 to-blue-900/40 p-6 md:p-8 rounded-2xl border border-red-500/30">
+                        <h3 class="font-cinzel text-2xl font-bold mb-6 text-yellow-400">Get In Touch</h3>
+
+                        <div class="space-y-6">
+                            <!-- Address -->
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                                <div class="bg-red-500 p-3 rounded-lg self-start">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Address</h4>
+                                    <p class="text-gray-300 leading-relaxed">
+                                        Giyani-F, 1356, Giyani, 0826<br>
+                                        Limpopo Province, South Africa
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                                <div class="bg-green-500 p-3 rounded-lg self-start">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Phone</h4>
+                                    <p class="text-gray-300">073 946 5427<br>+27 73 946 5427</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4 break-words">
+                                <div class="bg-blue-500 p-3 rounded-lg self-start">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Email</h4>
+                                    <p class="text-gray-300 break-words">info@consumingfirecathedral.co.za</p>
+                                </div>
+                            </div>
+
+                            <!-- Office Hours -->
+                            <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                                <div class="bg-purple-500 p-3 rounded-lg self-start">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Office Hours</h4>
+                                    <p class="text-gray-300">
+                                        Monday - Friday: 9:00 AM - 5:00 PM<br>
+                                        Saturday: 8:00 AM - 2:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-4 text-yellow-400">Follow Us</h4>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="#" class="bg-blue-600 hover:bg-blue-500 p-3 rounded-lg transition-colors">
+                                    <i class="fab fa-facebook text-white"></i>
+                                </a>
+                                <a href="#" class="bg-pink-600 hover:bg-pink-500 p-3 rounded-lg transition-colors">
+                                    <i class="fab fa-instagram text-white"></i>
+                                </a>
+                                <a href="#" class="bg-red-600 hover:bg-red-500 p-3 rounded-lg transition-colors">
+                                    <i class="fab fa-youtube text-white"></i>
+                                </a>
+                                <a href="#" class="bg-green-600 hover:bg-green-500 p-3 rounded-lg transition-colors">
+                                    <i class="fab fa-whatsapp text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="scroll-reveal">
+                    <div class="card-hover bg-gradient-to-br from-blue-900/40 to-purple-900/40 p-6 md:p-8 rounded-2xl border border-blue-500/30">
+                        <h3 class="font-cinzel text-2xl font-bold mb-6 text-yellow-400">Send Us a Message</h3>
+
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-semibold mb-2">First Name</label>
+                                    <input type="text" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 focus:border-yellow-400 focus:outline-none" placeholder="Your first name">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold mb-2">Last Name</label>
+                                    <input type="text" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 focus:border-yellow-400 focus:outline-none" placeholder="Your last name">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Email</label>
+                                <input type="email" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 focus:border-yellow-400 focus:outline-none" placeholder="your@email.com">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Phone</label>
+                                <input type="tel" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 focus:border-yellow-400 focus:outline-none" placeholder="Your phone number">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Subject</label>
+                                <select class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 focus:border-yellow-400 focus:outline-none">
+                                    <option>General Inquiry</option>
+                                    <option>Prayer Request</option>
+                                    <option>Ministry Information</option>
+                                    <option>Event Booking</option>
+                                    <option>Volunteer Opportunity</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Message</label>
+                                <textarea rows="4" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 focus:border-yellow-400 focus:outline-none" placeholder="Your message here..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full fire-gradient py-3 rounded-lg font-semibold glow-effect hover:scale-105 transition-transform">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-red-500/20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Church Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="text-3xl flame-icon">🔥</div>
+                        <div>
+                            <h3 class="font-cinzel font-bold text-xl text-yellow-400">Consuming Fire</h3>
+                            <p class="text-sm text-gray-400">Cathedral</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">Where God Answers by Fire</p>
+                    <p class="text-gray-500 text-xs">
+                        A Spirit-filled church bringing the fire of God's presence to South Africa and beyond.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-yellow-400 mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="text-gray-400 hover:text-yellow-400 transition-colors">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-yellow-400 transition-colors">Services</a></li>
+                        <li><a href="#sermons" class="text-gray-400 hover:text-yellow-400 transition-colors">Sermons</a></li>
+                        <li><a href="#give" class="text-gray-400 hover:text-yellow-400 transition-colors">Give</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-yellow-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Ministries -->
+                <div>
+                    <h4 class="font-semibold text-yellow-400 mb-4">Ministries</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Youth Ministry</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Women of Fire</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Men on Fire</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Children's Church</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">Worship Team</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-semibold text-yellow-400 mb-4">Stay Connected</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe to our newsletter for updates and inspiration</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 bg-gray-800 border border-gray-600 rounded-l-lg px-3 py-2 text-sm focus:border-yellow-400 focus:outline-none">
+                        <button class="fire-gradient px-4 py-2 rounded-r-lg text-sm font-semibold">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-center md:text-left mb-4 md:mb-0">
+                        <p class="text-gray-500 text-sm">
+                            © 2024 Consuming Fire Cathedral. All rights reserved.
+                        </p>
+                        <p class="text-gray-600 text-xs mt-1">
+                            Led by Prophet Musa Baloyi & Prophetess Fikile Baloyi
+                        </p>
+                    </div>
+                    
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="text-gray-500 hover:text-yellow-400 transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 hover:text-yellow-400 transition-colors">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+         // Mobile menu toggle (FIXED VERSION)
+    const mobileMenuButton = document.querySelector('button.md\\:hidden');
+    const mobileMenu = document.createElement('div');
+    mobileMenu.className = 'md:hidden bg-blue-900/95 backdrop-blur-lg border-t border-red-500/20 absolute top-16 left-0 right-0 z-40 hidden';
+    mobileMenu.innerHTML = `
+        <div class="px-4 py-6 space-y-4">
+            <a href="#home" class="block text-white hover:text-yellow-400 transition-colors">Home</a>
+            <a href="#about" class="block text-white hover:text-yellow-400 transition-colors">About</a>
+            <a href="#branches" class="block text-white hover:text-yellow-400 transition-colors">Branches</a>
+            <a href="#services" class="block text-white hover:text-yellow-400 transition-colors">Services</a>
+            <a href="#sermons" class="block text-white hover:text-yellow-400 transition-colors">Sermons</a>
+            <a href="#give" class="block text-white hover:text-yellow-400 transition-colors">Give</a>
+            <a href="#contact" class="block text-white hover:text-yellow-400 transition-colors">Contact</a>
+        </div>
+    `;
+
+    document.querySelector('nav').appendChild(mobileMenu);
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+        // Close mobile menu when clicking on links
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form submissions (demo functionality)
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show success message
+                const button = this.querySelector('button[type="submit"]');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check mr-2"></i>Sent Successfully!';
+                button.classList.add('bg-green-600');
+                
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.classList.remove('bg-green-600');
+                    this.reset();
+                }, 3000);
+            });
+        });
+
+        // Add some interactive effects
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-blue-900/95');
+            } else {
+                nav.classList.remove('bg-blue-900/95');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'967ddc4ac3664ed8',t:'MTc1Mzk3MjkyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
